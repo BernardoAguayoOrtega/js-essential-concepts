@@ -18,3 +18,11 @@ this: reference to an object
 // }
 
 // whatIsThis();
+
+// const user = {
+//   first: 'Reed',
+//   last: 'Barger',
+//   greetUser() {
+//     console.log(`Hi, ${this.first} ${this.last}`);  
+//   }  
+// }
