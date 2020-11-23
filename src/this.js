@@ -26,3 +26,16 @@ this: reference to an object
 //     console.log(`Hi, ${this.first} ${this.last}`);  
 //   }  
 // }
+
+// const userInfo = {
+//   title: "Programmer",
+//   user: {
+//      first: 'Reed',
+//      last: 'Barger',
+//      greetUser() {
+//       console.log(`Hi, ${this.first} ${this.last} ${this.title}`);  
+//      }   
+//   }  
+// }
+
+// userInfo.user.greetUser()
