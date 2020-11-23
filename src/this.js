@@ -11,3 +11,10 @@ this: reference to an object
 
 */
 
+// function whatIsThis() {
+// //   console.log(this);
+//  this.something = 2;
+//  console.log(something);
+// }
+
+// whatIsThis();
