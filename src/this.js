@@ -79,3 +79,11 @@ this: reference to an object
 
 // const user2 = new User('jane', 25);
 // user2.getAge();
+
+// const button = document.createElement('button');
+// button.textContent = "Click";
+// document.body.appendChild(button);
+
+// button.addEventListener('click', function() {
+//   console.log(this);
+// })
