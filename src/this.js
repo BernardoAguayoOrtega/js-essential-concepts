@@ -4,10 +4,10 @@ this: reference to an object
 
 4 Rules to 'this'. How is it called?
 
-1) in the global context
-2) as a method on an object
-3) as a constructor function or class constructor
-4) as a DOM event handler
+1) in the global context (global object, undefined in strict mode)
+2) as a method on an object (object on left side of dot)
+3) as a constructor function or class constructor (the instance itself with new)
+4) as a DOM event handler (the element itself)
 
 */
 
