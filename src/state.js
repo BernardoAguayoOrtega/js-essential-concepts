@@ -4,6 +4,11 @@
 
 class App {
   constructor() {
+    this.state = {
+      isAuth: false,
+      error: ''
+    }
+    
     this.render();
     this.$userMessage = document.getElementById("user-message");
     this.checkAuth();
