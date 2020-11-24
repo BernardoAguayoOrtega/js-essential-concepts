@@ -2,32 +2,39 @@
 // state -> status
 // state is important because say us the status of our application
 
+// state - data to be managed in app
+// state -> status
+
 class App {
   constructor() {
     this.state = {
-      isAuth: false,
-      error: ''
-    }
-    
-    this.render();
-    this.$userMessage = document.getElementById("user-message");
+       isAuth: false,
+       error: ''  
+    };  
+      
     this.checkAuth();
+    this.render();
+    // this.$userMessage = document.getElementById("user-message");
   }
 
   checkAuth() {
-    const user = true;
+    const user = false;
     if (user) {
-      this.$userMessage.textContent = "Welcome back!";
+      this.state = { ...this.state, isAuth: true };
+    //   this.$userMessage.textContent = "Welcome back!";
     } else {
-      this.$userMessage.textContent = "You must sign in!";
-      this.$userMessage.style.color = "red";
+      this.state = { ...this.state, error: "You must sign in!" };
+    //   this.$userMessage.textContent = "You must sign in!";
+    //   this.$userMessage.style.color = "red";
     }
   }
 
   render() {
+    const { isAuth, error } = this.state; 
+      
     document.getElementById("root").innerHTML = `
-      <div>
-        <span id="user-message"></span>
+      <div style="color: ${error && 'red'}">
+        ${isAuth ? 'Welcome back!' : error}
       </div>
     `;
   }
